@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui;
+}
+
+body {
+  background: #e9e9e9;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  background: #ffffff;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  box-shadow: -20px -20px 60px rgba(255, 255, 255, 0.5),
+    20px 20px 20px -5px rgba(166, 180, 200, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 390px;
+  height: 390px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px 10px rgba(166, 180, 200, 0.5),
+    inset 20px 20px 20px rgba(166, 180, 200, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.wrapper label {
+  position: absolute;
+  transform: rotate(calc(var(--i) * 360deg / 12));
+  inset: 16px;
+  text-align: center;
+}
+
+.wrapper label span {
+  transform: rotate(calc(var(--i) * -360deg / 12));
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2d333e;
+}
+
+.point {
+  width: 25px;
+  height: 25px;
+  background: #646e82;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px rgba(100, 110, 130, 0.6);
+}
+
+.point::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ff0000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 3px rgb(255, 0, 0, 0.6);
+  z-index: 4;
+}
+
+.stalk-seconds,
+.stalk-minutes,
+.stalk-hours {
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+}
+
+.stalk-seconds {
+  width: 4px;
+  height: 160px;
+  background: #ff0000;
+  box-shadow: 1px 1px 3px rgb(255, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.stalk-seconds::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 50px;
+  background: #ff0000;
+  bottom: -50px;
+  box-shadow: 1px 1px 3px rgb(255, 0, 0, 0.6);
+}
+
+.stalk-minutes {
+  width: 5px;
+  height: 130px;
+  background: #49505e;
+  box-shadow: 1px 1px 3px rgb(73, 80, 94, 0.6);
+  z-index: 2;
+}
+
+.stalk-hours {
+  width: 4px;
+  height: 100px;
+  background: #000000;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
