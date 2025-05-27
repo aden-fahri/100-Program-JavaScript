@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #7F8CAA, #B8CFCE);
+}
+
+.pw-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+#password {
+  background: #1a1919;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#btn-password {
+  background: #4E71FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+

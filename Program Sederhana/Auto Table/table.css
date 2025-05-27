@@ -1,0 +1,100 @@
+/* Reset default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F2F2F2, #EAE4D5);
+  color: #616060;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin: 0 10px 10px 0;
+  width: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.my-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-table th {
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.header-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-input::placeholder {
+  color: #a0b0c0;
+}
+
+.my-table td {
+  border: 1px solid #797676;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.editable-cell {
+  cursor: text;
+  min-width: 100px;
+}
+
+.my-table tr:nth-child(even) {
+  background: #FFE1E0;
+}

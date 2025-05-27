@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0065F8, #00FFDE);
+}
+.container {
+  text-align: center;
+  padding: 20px;
+}
+#qr-input {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#qr-code-box {
+  margin-top: 20px;
+}
+#qr-code-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
