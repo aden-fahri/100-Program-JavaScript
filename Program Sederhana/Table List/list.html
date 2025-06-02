@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table List</title>
+    <link rel="stylesheet" href="list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortRows('firstName', this)">
+            First Name
+            <i class="fa-solid"></i>
+          </th>
+          <th onclick="sortRows('lastName', this)">
+            Last Name
+            <i class="fa-solid"></i>
+          </th>
+          <th onclick="sortRows('age', this)">
+            Age
+            <i class="fa-solid"></i>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="list.js"></script>
+  </body>
+</html>
